@@ -3,128 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <!-- Responsive scaling for all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NSS | Projects</title>
-
-    <!-- Main Site Stylesheet -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Material Symbols: Open-source Google icon font -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" rel="stylesheet" />
-    <!-- Font Awesome Free CDN for brand icons -->
+    <!-- Font Awesome for all navigation/footer icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- 
-    =================
-    PAGE HEADER
-    =================
-    -->
+    <!-- ================= PAGE HEADER ================= -->
     <header>
         <div class="container">
             <h1>Nottingham Space Society</h1>
             <p class="tagline">It's Nottinghams Rocket Science</p>
         </div>
-
-        <!-- 
-        =============================
-        PRIMARY NAVIGATION BAR
-        ============================= 
-        -->
+        <!-- ============= PRIMARY NAVIGATION BAR ============= -->
         <nav class="nav-outer">
-            <!-- Top green line (stylistic element) -->
             <div class="green-bar"></div>
-
-            <!-- Navigation Bar -->
             <div class="nav-bar-bg">
                 <div class="container">
                     <ul class="nav-bar">
-                        <!--
-                        Each navigation <li> is a tab/button.
-                        For icons, Google's Material Symbols font are used.
-                        The icon name goes INSIDE the <span>.
-                        -->
                         <li>
                             <a href="index.html">
-                                <span class="material-symbols-sharp nav-icon">home</span>
+                                <i class="fa-solid fa-house nav-icon"></i>
                                 Home
                             </a>
                         </li>
                         <li>
                             <a href="about_us.html">
-                                <span class="material-symbols-sharp nav-icon">info</span>
+                                <i class="fa-solid fa-circle-info nav-icon"></i>
                                 About Us
                             </a>
                         </li>
                         <li>
                             <a href="committee.html">
-                                <span class="material-symbols-sharp nav-icon">group</span>
+                                <i class="fa-solid fa-user-group nav-icon"></i>
                                 Committee
                             </a>
                         </li>
                         <li>
                             <a href="projects.html" class="active">
-                                <span class="material-symbols-sharp nav-icon">science</span>
+                                <i class="fa-solid fa-flask nav-icon"></i>
                                 Projects
                             </a>
                         </li>
                         <li>
                             <a href="join.html">
-                                <span class="material-symbols-sharp nav-icon">person_add</span>
+                                <i class="fa-solid fa-user-plus nav-icon"></i>
                                 Join / Sponsor
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <!-- Bottom green line (stylistic element) -->
             <div class="green-bar"></div>
         </nav>
     </header>
 
-    <!-- 
-    =================
-    MAIN CONTENT AREA
-    ================= 
-    -->
     <main class="main-content">
 
     </main>
 
-    <!-- 
-    =================
-    SITE FOOTER
-    ================= 
-    -->
-
+    <!-- ============= SITE FOOTER ============= -->
     <footer>
         <div class="container">
             <div class="footer-main">
-
-                <!-- Contact -->
+                <!-- Contact Info -->
                 <div class="footer-section">
                     <h4>Contact Us</h4>
                     <ul class="footer-list">
-                        <li>
-                            <i class="fa-solid fa-envelope footer-icon"></i>
-                            <a href="mailto:info@nssociety.org">info@nssociety.org</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-location-dot footer-icon"></i>
-                            <a href="https://www.google.com/maps/place/University+of+Nottingham/@52.9387954,-1.2006753,17z/data=!3m1!4b1!4m6!3m5!1s0x4879c274ccd0ff2f:0xdfb0ab46a504ed52!8m2!3d52.9387922!4d-1.1981057!16zL20vMG55NzU?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D"
-                                target="_blank" rel="noopener" title="View on Google Maps">
-                                Room 102, Student Union,<br>
-                                University of Nottingham
+                        <li><i class="fa-solid fa-envelope footer-icon"></i><a
+                                href="mailto:info@nssociety.org">info@nssociety.org</a></li>
+                        <li><i class="fa-solid fa-location-dot footer-icon"></i>
+                            <a href="https://www.google.com/maps/place/University+of+Nottingham/" target="_blank"
+                                rel="noopener" title="View on Google Maps">
+                                Room 102, Student Union,<br>University of Nottingham
                             </a>
                         </li>
                     </ul>
                 </div>
-
                 <!-- Quick Links -->
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -135,22 +93,16 @@
                         <li><a href="join.html">Join / Sponsor</a></li>
                     </ul>
                 </div>
-
                 <!-- Socials -->
                 <div class="footer-section footer-socials">
                     <h4>Connect</h4>
-                    <a href="https://instagram.com/yourhandle" target="_blank" title="Instagram" rel="noopener">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://discord.com/invite/yourinvite" target="_blank" title="Discord" rel="noopener">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                    <a href="mailto:info@nssociety.org" title="Email">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/yourhandle" target="_blank" title="LinkedIn" rel="noopener">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                    <a href="https://instagram.com/yourhandle" target="_blank" title="Instagram" rel="noopener"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://discord.com/invite/yourinvite" target="_blank" title="Discord" rel="noopener"><i
+                            class="fab fa-discord"></i></a>
+                    <a href="mailto:info@nssociety.org" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/yourhandle" target="_blank" title="LinkedIn" rel="noopener"><i
+                            class="fab fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="footer-legal">
