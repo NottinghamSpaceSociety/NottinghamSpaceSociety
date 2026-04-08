@@ -146,7 +146,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     height: 56px;
-    min-width: 110px;
+    min-width: 90px;
     padding: 0 2em;
     background: var(--nss-grey);
     color: var(--nss-gold);
@@ -320,21 +320,119 @@ main {
 }
 
 /* =======================
-   Footer
-   ======================= */
+ * Footer
+ * ======================= */
 footer {
     background: var(--nss-black);
     color: var(--nss-gold);
-    text-align: center;
-    padding: 1.2rem 0;
-    font-size: 1rem;
-    margin-top: 2.5rem;
+    padding: 2.5rem 0 1.2rem 0;
+    font-size: 1em;
     border-top: 3px solid var(--nss-green);
 }
 
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section {
+    min-width: 180px;
+}
+
+.footer-section h4 {
+    color: var(--nss-gold);
+    font-size: 1.15em;
+    margin-bottom: 0.5em;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 0.5em;
+    line-height: 1.7;
+    color: var(--nss-gold);
+    display: flex;
+    align-items: center;
+}
+
+.footer-list a {
+    color: var(--nss-gold);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+    color: var(--nss-green);
+    text-decoration: underline dotted;
+}
+
+/* Social icons row */
+.footer-socials a {
+    display: inline-block;
+    margin-right: 0.75em;
+    color: var(--nss-gold);
+    font-size: 1.6em;
+    vertical-align: middle;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.footer-socials a:last-child {
+    margin-right: 0;
+}
+
+.footer-socials a:hover,
+.footer-socials a:focus {
+    color: var(--nss-green);
+    transform: translateY(-2px) scale(1.12);
+}
+
+/* Icon adjustments for contact/info rows */
+.footer-icon {
+    margin-right: 0.5em;
+    font-size: 1.15em;
+    filter: brightness(1.2);
+}
+
+/* Legal */
+.footer-legal {
+    border-top: 1px solid var(--nss-green);
+    padding-top: 1em;
+    text-align: center;
+    font-size: 0.93em;
+    color: var(--nss-gold);
+}
+
+.footer-legal a {
+    color: var(--nss-gold);
+    margin-left: 0.7em;
+}
+
+.footer-legal a:hover,
+.footer-legal a:focus {
+    color: var(--nss-green);
+}
+
+/* Responsive: stack for narrow screens */
+@media (max-width: 800px) {
+    .footer-main {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
 /* =======================
-   Responsive Layout
-   ======================= */
+ * Responsive Layout
+ * ======================= */
 @media (max-width: 900px) {
     .project-cards {
         flex-direction: column;
